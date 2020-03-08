@@ -1,0 +1,31 @@
+JSON.stringify can be used anywhere, where we want to convert any object, any array or any data type of javascript in to a string.
+
+Example:
+
+1) Example of Array
+
+var arr = [1,2,3,4,5];
+var output = JSON.stringify(arr);
+output ===>  "[1,2,3,4,5]"
+
+2) Example of object
+
+var obj = {
+"name":"preeti",
+"lastname":"goyal"
+}
+
+var output = JSON.stringify(obj);
+output ===>  "{"name":"preeti","lastname":"goyal"}"
+
+3) Example of datatype
+
+var val = 5;
+var output = JSON.stringify(val);
+output ===> "5"
+
+4)Example of function in object
+
+var obj = { name: "John", age: function () {return 30;}, city: "New York"};
+var myJSON = JSON.stringify(obj);
+output ===> "{"name":"John","city":"New York"}"
