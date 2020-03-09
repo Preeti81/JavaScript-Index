@@ -1,0 +1,44 @@
+Purpose of "use strict" is that javascript code should be executed in strict mode.
+The scope of "use strict" is global.
+"use strict" --> varible should be declared
+IE 9 and lower version not support "use strict"
+The "use strict" directive was new in ECMAScript version 5.
+
+Example :->
+
+Example of without declare variable
+
+"use strict"; test=2; console.log("Hi..", test);
+
+Output ===> VM754:1 Uncaught ReferenceError: test is not defined
+    at <anonymous>:1:19
+    
+Example :-  declared variable with var keyword
+    
+"use strict"; var test=2; console.log("Hi..", test);
+    
+Output ===>    Hi.. 2
+
+Example with function
+
+"use strict"; f= 5; function add(){ console.log("Hi..", (5+f));
+
+Output ===>UVM1034:1 Uncaught ReferenceError: f is not defined
+
+Example with function after declare variable
+
+"use strict"; var f= 5; function add(){ console.log("Hi..", (5+f))};
+
+add()
+
+Output ===> Hi.. 10
+
+Example with same name parameter
+
+"use strict"; function add(p1, p1){ console.log("Hi..", (p1+p1))};
+
+Output ===> Uncaught SyntaxError: Duplicate parameter name not allowed in this context
+
+
+
+   
