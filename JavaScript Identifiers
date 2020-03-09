@@ -1,0 +1,27 @@
+JavaScript is case-sensitive.
+In JavaScript variable name should not start with numeric value and also variable name should not be reserve keyword.
+_(Underscore) and $(dollar) can be used to make any variable significant or usable.
+
+Example 1 :->
+
+var 7test = 7;
+Output ===>Uncaught SyntaxError: Invalid or unexpected token
+
+var _7test = 7;
+Output ===> 7
+
+Example 2 :->
+
+var 7demo = 7;
+Output ===> Uncaught SyntaxError: Invalid or unexpected token
+
+var $7demo = 7;
+Output ===> 7
+
+Example 3 :->
+
+var break = 7;
+Output ===> Uncaught SyntaxError: Unexpected token 'break'
+
+var $break = 7;
+Output ===> 7
