@@ -1,0 +1,4 @@
+Arrow function is similar to normal function.
+If the function has only one statement then we can remove the brackets and return keyword.
+In Arrow function this always defined the window object while in normal function this could be document, window, button or whatever.
+new keyword is not allow with arrow function.
