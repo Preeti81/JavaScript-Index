@@ -1,1 +1,16 @@
 Closure means that inner function always have access of outer function's vars and parameter.
+
+function good(){
+ var test = "I am a good girl";
+      function best()
+      {
+      alert (test + "best");
+      var best = "I am a best girl";
+      }
+        
+alert (test + "good");
+return best;
+}
+      
+var inner =  good();
+inner();
