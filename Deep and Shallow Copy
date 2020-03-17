@@ -1,0 +1,32 @@
+Deep Copy (different memmory allocation for different object.)
+If one object washout still second object remains in memory.
+
+bag1 :--> name, lastname, age (adress : 123)
+bag2 :---> name, lastname, age (adress : 234)
+
+Shallow Copy (same memory allocation for different objects.)
+If one object washout then automatically second object get empty.
+
+bage1 --> (name, lastname, age) <--  bag2
+address :------> 456 for both ba
+
+Example : -
+
+   var objectOriginal = {
+      name : "Preeti",
+      lastname:"Goyal",
+      age:"12"
+   }
+    
+   var objectShallow = objectOriginal;
+      alert(objectShallow.name);
+      
+   var objectDeep = {
+      name : objectOriginal.name,
+      lastname : objectOriginal.lastname,
+      age : objectOriginal.age
+  }
+      
+  alert(objectDeep.name);
+  
+  
