@@ -1,1 +1,1 @@
-
+Closure means that inner function always have access of outer function's vars and parameter.
